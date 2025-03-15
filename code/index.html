@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Planet - Home </title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="scripts/locations.js"></script>
+    <script type="text/javascript" src="scripts/weather.js"></script>
+    <script type="text/javascript" src="scripts/distance.js"></script>
+    <script type="text/javascript" src="scripts/airQuality.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGueOw1vUcZMTfU7YTniCkX-D6r_liGYc&loading=async&callback=initMap&libraries=marker" async defer></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Living Planet - Home</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="oauth.html">OAuth</a></li>
+                    <li><a href="about.html">About</a></li> 
+                </ul>
+            </nav>
+    </header>
+    <main>
+       <div class="info-container"> 
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p>Location: <span id="weatherlocation"></span></p>
+            <p>Description: <span id="weatherdescription"></span></p>
+            <p>Temperature: <span id="weathertemp"></span>&deg;C</p>
+            <p>Wind speed: <span id="weatherwind"></span></p>
+            <p>Clouds data: <span id="weatherclouds"></span></p>
+            <p>Humidity: <span id="weatherhumidity"></span></p>
+        </section>
+
+        <section id="distance-info">
+            <h2>Distance Information</h2>
+            <p>Select a location on the map to display the distance information from Living Planet.</p>
+        </section>
+       </div>
+
+        <section id="travelSelection">
+            <label for="travelMode">Choose travel mode:</label>
+            <select id="travelMode">
+                <option value="WALKING">Walking</option>
+                <option value="DRIVING">Driving</option>
+                <option value="BICYCLING">Cycling</option>
+                <option value="TRANSIT">Public Transport</option>
+            </select>
+        </section>
+    
+        <section id="directionsPanel"></section>            
+    
+        <section id="map" map-id="LP_MAP_ID"></section>
+
+    </main>
+    <footer>
+        <p>&copy; Living Planet 2024</p>
+    </footer>
+</body>
+</html>

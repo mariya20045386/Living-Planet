@@ -1,0 +1,160 @@
+.info-container {
+    display: flex;
+    gap: 20px;
+}
+
+.info-container section {
+    flex: 1; 
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #3aafa9;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #17252a;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #3aafa9;
+}
+
+#weather{
+    border-left: 5px solid #3aafa9;
+    padding-left: 15px;
+}
+
+#distance-info {
+    border-left: 5px solid #3aafa9;
+    margin-top: 20px;
+}
+
+#map {
+    float: left;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#directionsPanel {
+    float: right;
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+#airQualityWindow {
+    width: 200px; 
+    height: 180px; 
+    font-size: 14px; 
+    padding: 0;
+    margin: 0;
+    line-height: 0.5;    
+}
+
+#airQualityWindow h1 {
+    font-size: 15px; 
+}
+
+#airQualityWindow h2 {
+    font-size: 15px;
+    color: #3aafa9;
+}
+
+#airQualityWindow p {
+    font-size: 12px; 
+}
+
+footer {
+    background-color: #3aafa9;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+}
