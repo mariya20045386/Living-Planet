@@ -1,10 +1,1 @@
-Main link to homepage:
-http://w20045386.ukwest.cloudapp.azure.com
-http://w20045386.ukwest.cloudapp.azure.com/
-http://w20045386.ukwest.cloudapp.azure.com//index.html
-
-OAuth page:
-http://w20045386.ukwest.cloudapp.azure.com/oauth.html
-
-About page:
-http://w20045386.ukwest.cloudapp.azure.com/about.html
+The website was for a client who was a charity organisation which had the objective to raise awareness about pollution and educate people about air pollution in different cities and their choices of travel. This was done using OpenWeather and Google Maps API to provide real-time data. It also involved implementing secure authentication while providing a smooth user experience.  
